@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lineerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uploadActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="421dp"
+        android:layout_height="123dp"
+        android:onClick="selectImage"
+        app:srcCompat="@drawable/selectimage" />
+
+    <EditText
+        android:id="@+id/et_yorum"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:ems="10"
+        android:hint="Yorum"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="upload"
+        android:text="Yükle" />
+</LinearLayout>
